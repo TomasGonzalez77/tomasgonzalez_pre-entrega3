@@ -65,12 +65,12 @@ nav {
     justify-content: space-between;
     width: auto;
     height: auto;
+    color: whitesmoke;
 }
 
 
 /*FOOTER*/
 
-footer {}
 
 /*Inicio*/
 
@@ -86,7 +86,7 @@ footer {}
     .card {
         margin: 0;
         padding: 0;
-        width: width: 100%;
+        width: 100%;
         max-width: 900px;
         min-width: 899px;
     }
@@ -273,7 +273,6 @@ footer {}
         margin: 0;
         width: auto;
         height: auto;
-        v
     }
 
     .img-complejos {
@@ -576,7 +575,7 @@ form {
     color: #ffff;
 }
 
-.card-n{
+.card-n {
     display: flex;
     width: 300px;
     margin: 50px;
