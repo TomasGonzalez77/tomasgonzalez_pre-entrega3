@@ -151,9 +151,13 @@ footer {}
     padding: 0;
     box-sizing: border-box;
     background-position: center;
-    background: #41295a;
-    background: -webkit-linear-gradient(to right, #2F0743, #41295a);
-    background: linear-gradient(to right, #2F0743, #41295a);
+    background: #4B79A1;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #283E51, #4B79A1);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #283E51, #4B79A1);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .contenido {
@@ -172,12 +176,13 @@ footer {}
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 1000px;
-    background: #41295a;
-    background: -webkit-linear-gradient(to right, #2F0743, #41295a);
-    background: linear-gradient(to right, #2F0743, #41295a);
-    color: #ffff;
-
+    width: 70%;
+    background: #4B79A1;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #283E51, #4B79A1);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #283E51, #4B79A1);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .card-img-top {
@@ -328,9 +333,13 @@ footer {}
     margin-left: auto;
     margin-right: auto;
     flex-wrap: wrap;
-    background: #41295a;
-    background: -webkit-linear-gradient(to right, #2F0743, #41295a);
-    background: linear-gradient(to right, #2F0743, #41295a);
+    background: #EECDA3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #edb8cf, #EECDA3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #edb8cf, #EECDA3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
 }
 
@@ -338,8 +347,7 @@ footer {}
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid black;
     margin: 5px;
     padding: 5px;
     background-color: transparent;
@@ -374,14 +382,16 @@ footer {}
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    background: #41295a;
-    background: -webkit-linear-gradient(to right, #2F0743, #41295a);
-    background: linear-gradient(to right, #2F0743, #41295a);
+    background: #E0EAFC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
 .contenedor-r {
-    color: #ffff;
     width: 80%;
     margin: 10px;
 }
@@ -390,8 +400,8 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    color: #ffff;
+    width: 80%;
+
 }
 
 .provincia {
@@ -577,7 +587,7 @@ form {
 }
 
 
-.card-n{
+.card-n {
     display: flex;
     width: 300px;
     margin: 50px;
