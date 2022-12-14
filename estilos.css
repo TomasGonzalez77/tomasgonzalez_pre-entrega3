@@ -62,7 +62,7 @@ body::-webkit-scrollbar-thumb {
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: auto;
     height: auto;
     color: whitesmoke;
@@ -346,7 +346,7 @@ nav {
 }
 
 .img-complejos {
-    display: block;
+    display: flex;
     width: 500px;
 
 }
