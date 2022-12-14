@@ -1,18 +1,161 @@
-.body {
+/*RESET*/
 
-    &__inicio {
-        height: 100%;
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #41295a;
+    ;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: -webkit-linear-gradient(to right, #2F0743, #41295a);
+    ;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid #000000;
+
+}
+
+/*HEADER*/
+
+@media screen and (max-width:1024) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:375px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: auto;
+    height: auto;
+    color: whitesmoke;
+}
+
+
+/*FOOTER*/
+
+
+/*Inicio*/
+
+@media screen and (max-width:1024) {
+    .inicio {
+        display: flex;
         width: 100%;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        background-position: center;
-        background: #41295a;
-        background: -webkit-linear-gradient(to right, #2F0743, #41295a);
-        background: linear-gradient(to right, #2F0743, #41295a);
+        width: 100%;
+        max-width: 1024px;
+        min-width: 1023px;
     }
 
-    &__contenido {
+    .card {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: 900px;
+        min-width: 899px;
+    }
+
+}
+
+@media screen and (max-width:767) {
+    .inicio {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        width: 100%;
+        max-width: 768;
+        min-width: 767px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: 768;
+        min-width: 767px;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .card-text {
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        width: auto;
+        max-width: 400px;
+        min-width: 399;
+    }
+
+    img {
+        display: none;
+    }
+
+    .card-img-top {
+        display: none;
+
+    }
+
+    .card-img-bottom {
+        display: none;
+    }
+
+}
+
+
+.inicio {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-position: center;
+    background: #41295a;
+    background: -webkit-linear-gradient(to right, #2F0743, #41295a);
+    background: linear-gradient(to right, #2F0743, #41295a);
+
+    .contenido {
         display: flex;
         flex-direction: row;
         padding-top: 100px;
@@ -22,28 +165,435 @@
         height: auto;
         width: auto;
 
+        .card {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 1000px;
+            background: #41295a;
+            background: -webkit-linear-gradient(to right, #2F0743, #41295a);
+            background: linear-gradient(to right, #2F0743, #41295a);
+            color: #ffff;
+
+            .card-img-top {
+                width: 300px;
+                height: 300px;
+            }
+
+            .card-img-bottom {
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+    }
+}
+
+
+/*Complejos*/
+
+@media screen and (max-width:1024) {
+
+
+    .b-complejos {
+        display: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        max-width: 1024px;
+        min-width: 1023px;
     }
 
-    &__card {
+    .complejos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        display: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        max-width: 1024px;
+        min-width: 1023px;
+    }
+
+    .img-complejos {
+        display: none;
+
+    }
+}
+
+@media screen and (max-width:768px) {
+
+
+    .b-complejos {
+        display: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        max-width: 750px;
+        min-width: 749px;
+    }
+
+    .complejos {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        width: 1000px;
-        background: #41295a;
-        background: -webkit-linear-gradient(to right, #2F0743, #41295a);
-        background: linear-gradient(to right, #2F0743, #41295a);
+        display: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        max-width: 750px;
+        min-width: 749px;
+    }
+
+    .img-complejos {
+        display: flex;
+        width: auto;
+        height: auto;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .b-complejos {
+        display: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        max-width: 425px;
+        min-width: 424px;
+    }
+
+    .complejos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        display: 0;
+        margin: 0;
+        width: auto;
+        height: auto;
+    }
+
+    .img-complejos {
+        display: flex;
+        width: auto;
+        height: auto;
+        max-width: 0px;
+    }
+}
+
+@media screen and (max-width:375px) {
+
+
+    .b-complejos {
+        display: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        max-width: 320px;
+        min-width: 319px;
+
+    }
+
+    .complejos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        display: 0;
+        margin: 0;
+        width: auto;
+        height: auto;
+        max-width: 300px;
+        min-width: 299px;
+
+    }
+
+    .img-complejos {
+        display: flex;
+        width: auto;
+        height: auto;
+        max-width: 0px;
+    }
+}
+
+.b-complejos {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    background: #41295a;
+    background: -webkit-linear-gradient(to right, #2F0743, #41295a);
+    background: linear-gradient(to right, #2F0743, #41295a);
+
+    .complejos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border: 1px solid white;
+        color: white;
+        margin: 5px;
+        padding: 5px;
+        background-color: transparent;
+        height: 100%;
+
+        .img-complejos {
+            display: flex;
+            width: 500px;
+
+        }
+
+        .descripcion {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .but-com {
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            margin: 20px;
+        }
+    }
+
+}
+
+
+/*Recomendaciones - Gracias*/
+
+.recomendaciones {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background: #41295a;
+    background: -webkit-linear-gradient(to right, #2F0743, #41295a);
+    background: linear-gradient(to right, #2F0743, #41295a);
+
+    .gracias {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding-top: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
         color: #ffff;
 
+        .gracias-logo {
+            display: flex;
+            justify-content: center;
+            width: 100px;
+            padding-bottom: 100px;
+        }
     }
 
-    &__card-img-top {
-        width: 300px;
-        height: 300px;
+
+    .contenedor-r {
+        color: #ffff;
+        width: 80%;
+        margin: 10px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            color: #ffff;
+
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                color: #ffff;
+
+                .provincia {
+                    display: flex;
+                    flex-direction: column;
+                    width: 40%;
+                }
+
+                .nombre {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: left;
+                    width: 40%;
+                }
+
+                .ubicacion {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: left;
+                    width: 40%;
+                }
+
+                .but-rec {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: right;
+                    margin: 20px;
+                }
+            }
+
+        }
+
     }
 
-    &__card-img-bottom {
-        width: 300px;
-        height: 300px;
+}
+
+
+
+/*Contacto*/
+
+.contacto {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #41295a;
+    background: -webkit-linear-gradient(to right, #2F0743, #41295a);
+    background: linear-gradient(to right, #2F0743, #41295a);
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80%;
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+
+    .b-contacto {
+        color: #ffff;
+
+        .icon {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .logo {
+                display: block;
+                width: 70px;
+                margin: 10px;
+                padding: 10px;
+            }
+
+        }
+    }
+}
+
+
+
+
+
+/*Nosotros*/
+
+@media screen and (max-width:1020) {
+    .nosotros {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        max-width: 1024px;
+        min-width: 1023;
+        padding-bottom: 120px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 
+    .contenedor-text {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        color: #ffff;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .nosotros {
+        width: 100%;
+        height: 100%;
+        max-width: 768px;
+        min-width: 767;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .nosotros {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        max-width: 479px;
+        min-width: 478;
+        padding-bottom: 120px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        max-width: 375px;
+        min-width: 374;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .n-contenedor {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .text-nosotros {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        color: #ffff;
+    }
+}
+
+.nosotros {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #41295a;
+    background: -webkit-linear-gradient(to right, #2F0743, #41295a);
+    background: linear-gradient(to right, #2F0743, #41295a);
+
+    .contenedor-text {
+        display: flex;
+        color: #ffff;s
+
+        .card-n {
+            display: flex;
+            width: 300px;
+            margin: 50px;
+            display: 50px;
+            margin-top: 100px;
+            margin-bottom: 250px;
+        }
+    }
 }
