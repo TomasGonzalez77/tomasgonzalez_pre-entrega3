@@ -1,5 +1,7 @@
 /*RESET*/
 
+$colors: #41295a #2F0743 #000000 #ffff;
+
 * {
     padding: 0;
     margin: 0;
@@ -585,9 +587,9 @@ nav {
 
     .contenedor-text {
         display: flex;
-        color: #ffff;s
+        color: #ffff;
 
-        .card-n {
+        s .card-n {
             display: flex;
             width: 300px;
             margin: 50px;
